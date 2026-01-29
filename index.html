@@ -1,159 +1,254 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>RiderAccess – Accessoires & Pièces Moto</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RiderAccess</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #f4f6f4;
+      color: #222;
+    }
+
+    /* HEADER */
+    .site-header {
+      width: 100%;
+      height: 220px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 4px solid #2ecc71;
+    }
+
+    .header-logo img {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 40px;
+      background: linear-gradient(135deg, #ffffff, #e9f7ef);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .hero-text h1 span {
+      color: #2ecc71;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .hero-text a {
+      display: inline-block;
+      padding: 15px 35px;
+      background: #2ecc71;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .hero-text a:hover {
+      background: #27ae60;
+    }
+
+    .hero-image img {
+      max-width: 450px;
+      width: 100%;
+    }
+
+    /* PRODUCTS */
+    .products {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .products h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #2ecc71;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .product-card a {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #2ecc71;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* CTA */
+    .cta {
+      max-width: 1200px;
+      margin: 80px auto;
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      padding: 50px;
+      border-radius: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .cta h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 40px;
+      background: #ffffff;
+      color: #2ecc71;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #ffffff;
+      padding: 30px;
+      text-align: center;
+      border-top: 3px solid #2ecc71;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body>
 
-<!-- NAVBAR -->
-<nav class="bg-green-700 text-white">
-  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-    <div class="text-xl font-bold">RiderAccess</div>
-    <div class="hidden md:flex gap-6 font-medium">
-      <a href="#" class="underline">Accueil</a>
-      <a href="#">Boutique</a>
-      <a href="#">À propos</a>
-      <a href="#">Contact</a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-logo">
+      <!-- 🔁 REMPLACE LE LIEN PAR TON LOGO PNG -->
+      <img src="assets/logo-rideraccess.png" alt="RiderAccess Logo">
     </div>
-    <button class="bg-white text-green-700 px-4 py-2 rounded font-semibold">
-      Mon Panier
-    </button>
-  </div>
-</nav>
+  </header>
 
-<!-- HERO -->
-<section class="bg-gradient-to-r from-gray-100 to-gray-200 py-16">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
-    
-    <div>
-      <h1 class="text-4xl font-extrabold mb-4">
-        ACCESSOIRES & <span class="text-green-700">PIÈCES MOTO</span>
-      </h1>
-      <p class="mb-6 text-gray-600">
-        Équipez votre moto avec des produits fiables et performants.
-      </p>
-      <a href="#boutique"
-         class="inline-block bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-600">
-        Voir la boutique
-      </a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Accessoires & <span>Pièces Moto</span></h1>
+      <p>Équipe ta moto avec des produits fiables, stylés et performants.</p>
+      <a href="#">Voir la boutique</a>
     </div>
-
-    <div>
-      <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9"
-           class="rounded-xl shadow-lg">
+    <div class="hero-image">
+      <img src="assets/hero-moto.png" alt="Moto accessoires">
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h2>Produits Populaires</h2>
+    <div class="product-grid">
 
-<!-- CATEGORIES -->
-<section class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6">
-  
-  <div class="bg-white rounded shadow p-6">
-    <h3 class="text-green-700 font-bold text-lg mb-2">Échappements Sport</h3>
-    <p class="text-sm mb-4">À partir de 99€</p>
-    <button class="bg-green-700 text-white px-4 py-2 rounded">
-      Acheter
-    </button>
-  </div>
+      <div class="product-card">
+        <img src="assets/casque.png">
+        <h3>Casque Intégral</h3>
+        <p>120€</p>
+        <a href="#">Acheter</a>
+      </div>
 
-  <div class="bg-white rounded shadow p-6">
-    <h3 class="text-green-700 font-bold text-lg mb-2">Casques de Moto</h3>
-    <p class="text-sm mb-4">Nouvelle collection</p>
-    <button class="bg-green-700 text-white px-4 py-2 rounded">
-      Découvrir
-    </button>
-  </div>
+      <div class="product-card">
+        <img src="assets/echappement.png">
+        <h3>Pot d’Échappement</h3>
+        <p>89€</p>
+        <a href="#">Acheter</a>
+      </div>
 
-  <div class="bg-white rounded shadow p-6">
-    <h3 class="text-green-700 font-bold text-lg mb-2">Pièces & Accessoires</h3>
-    <p class="text-sm mb-4">Qualité garantie</p>
-    <button class="bg-green-700 text-white px-4 py-2 rounded">
-      Voir plus
-    </button>
-  </div>
+      <div class="product-card">
+        <img src="assets/gants.png">
+        <h3>Gants Moto</h3>
+        <p>45€</p>
+        <a href="#">Acheter</a>
+      </div>
 
-</section>
-
-<!-- PRODUITS POPULAIRES -->
-<section id="boutique" class="max-w-7xl mx-auto px-6 py-12">
-  <h2 class="text-2xl font-bold mb-6">Produits populaires</h2>
-
-  <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-
-    <div class="bg-white rounded shadow p-4 text-center">
-      <img src="https://images.unsplash.com/photo-1589187155478-7d6c0f62d6d8" class="mb-3 rounded">
-      <h3 class="font-semibold">Casque Intégral</h3>
-      <p class="text-sm mb-3">120 €</p>
-      <button class="bg-green-700 text-white px-4 py-2 rounded">
-        Commander
-      </button>
     </div>
+  </section>
 
-    <div class="bg-white rounded shadow p-4 text-center">
-      <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738" class="mb-3 rounded">
-      <h3 class="font-semibold">Pot d’échappement</h3>
-      <p class="text-sm mb-3">89 €</p>
-      <button class="bg-green-700 text-white px-4 py-2 rounded">
-        Acheter
-      </button>
-    </div>
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Commandez dès maintenant</h2>
+    <p>Paiement sécurisé • Livraison rapide</p>
+    <a href="#">Acheter maintenant</a>
+  </section>
 
-    <div class="bg-white rounded shadow p-4 text-center">
-      <img src="https://images.unsplash.com/photo-1625231334168-35067f8853ed" class="mb-3 rounded">
-      <h3 class="font-semibold">Gants cuir moto</h3>
-      <p class="text-sm mb-3">45 €</p>
-      <button class="bg-green-700 text-white px-4 py-2 rounded">
-        Acheter
-      </button>
-    </div>
-
-    <div class="bg-white rounded shadow p-4 text-center">
-      <img src="https://images.unsplash.com/photo-1592840062661-6d37e46a9f08" class="mb-3 rounded">
-      <h3 class="font-semibold">Rétroviseurs sport</h3>
-      <p class="text-sm mb-3">30 €</p>
-      <button class="bg-green-700 text-white px-4 py-2 rounded">
-        Acheter
-      </button>
-    </div>
-
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="bg-green-700 text-white py-12 text-center">
-  <h2 class="text-3xl font-bold mb-2">Commandez dès maintenant !</h2>
-  <p class="mb-6">Paiement sécurisé • Livraison rapide</p>
-  <a href="https://wa.me/243846354303"
-     class="bg-white text-green-700 px-6 py-3 rounded font-semibold">
-    Acheter maintenant
-  </a>
-</section>
-
-<!-- SERVICES -->
-<section class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6 text-center">
-  <div>
-    🔒
-    <p class="font-semibold">Paiement sécurisé</p>
-  </div>
-  <div>
-    🚚
-    <p class="font-semibold">Livraison rapide</p>
-  </div>
-  <div>
-    📞
-    <p class="font-semibold">Support 24/7</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-white text-center text-sm text-gray-500 py-6">
-  © 2026 RiderAccess — Tous droits réservés
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 RiderAccess — Tous droits réservés
+  </footer>
 
 </body>
 </html>
