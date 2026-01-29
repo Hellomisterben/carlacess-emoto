@@ -11,53 +11,69 @@
 
   <!-- HEADER -->
   <header class="bg-green-700 text-white p-5 text-center">
-    <h1 class="text-2xl font-bold">Carlacess e-Moto</h1>
+    <h1 class="text-3xl font-bold">Carlacess e-Moto</h1>
     <p class="text-sm">Pièces & accessoires moto sur commande</p>
   </header>
 
   <!-- HERO -->
-  <section class="p-6 text-center">
-    <h2 class="text-xl font-semibold mb-2">
+  <section class="p-6 text-center bg-gray-100 rounded-b-lg shadow">
+    <h2 class="text-2xl font-semibold mb-2">
       Vous cherchez une pièce moto précise ?
     </h2>
     <p class="mb-4 text-sm">
       Envoyez-nous la photo, nous revenons vers vous sous 2h.
     </p>
-    <a href="#scan" class="bg-green-600 text-white px-4 py-2 rounded">
+    <a href="#scan" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-500 transition">
       Scanner une pièce
     </a>
   </section>
 
   <!-- PRODUITS -->
-  <section class="p-6 grid gap-4">
+  <section class="p-6 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
 
-    <div class="border rounded p-4 shadow">
-      <h3 class="font-bold">Casque intégral</h3>
+    <!-- Produit 1 -->
+    <div class="border rounded p-4 shadow hover:shadow-lg transition">
+      <img src="https://i.imgur.com/8Q5a1hF.jpg" alt="Casque intégral" class="mb-2 rounded">
+      <h3 class="font-bold text-lg">Casque intégral</h3>
       <p class="text-sm mb-2">Sécurité et confort</p>
-
       <div class="flex gap-2">
         <a href="https://wa.me/243846354303?text=Bonjour%20je%20veux%20le%20casque"
-           class="bg-green-500 text-white px-3 py-1 rounded text-sm">
+           class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-400">
            WhatsApp
         </a>
-
-        <a href="#" class="bg-blue-600 text-white px-3 py-1 rounded text-sm">
+        <a href="#" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-500">
            PayPal
         </a>
       </div>
     </div>
 
-    <div class="border rounded p-4 shadow">
-      <h3 class="font-bold">Gants moto</h3>
+    <!-- Produit 2 -->
+    <div class="border rounded p-4 shadow hover:shadow-lg transition">
+      <img src="https://i.imgur.com/7GfQkqS.jpg" alt="Gants moto" class="mb-2 rounded">
+      <h3 class="font-bold text-lg">Gants moto</h3>
       <p class="text-sm mb-2">Protection et grip</p>
-
       <div class="flex gap-2">
         <a href="https://wa.me/243846354303?text=Bonjour%20je%20veux%20les%20gants"
-           class="bg-green-500 text-white px-3 py-1 rounded text-sm">
+           class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-400">
            WhatsApp
         </a>
+        <a href="#" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-500">
+           PayPal
+        </a>
+      </div>
+    </div>
 
-        <a href="#" class="bg-blue-600 text-white px-3 py-1 rounded text-sm">
+    <!-- Produit 3 -->
+    <div class="border rounded p-4 shadow hover:shadow-lg transition">
+      <img src="https://i.imgur.com/UcP6hDq.jpg" alt="Lunettes moto" class="mb-2 rounded">
+      <h3 class="font-bold text-lg">Lunettes moto</h3>
+      <p class="text-sm mb-2">Protection yeux et style</p>
+      <div class="flex gap-2">
+        <a href="https://wa.me/243846354303?text=Bonjour%20je%20veux%20les%20lunettes"
+           class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-400">
+           WhatsApp
+        </a>
+        <a href="#" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-500">
            PayPal
         </a>
       </div>
@@ -66,22 +82,22 @@
   </section>
 
   <!-- SCAN PIECE -->
-  <section id="scan" class="p-6 bg-gray-100">
-    <h2 class="font-bold mb-2">Scanner une pièce</h2>
+  <section id="scan" class="p-6 bg-gray-200 rounded-lg mt-6">
+    <h2 class="font-bold mb-2 text-lg">Scanner une pièce</h2>
     <p class="text-sm mb-3">
-      Téléversez la photo de la pièce recherchée.
+      Téléversez la photo de la pièce recherchée et envoyez-la via WhatsApp.
     </p>
 
-    <input type="file" class="mb-4">
+    <input type="file" class="mb-4 border rounded p-2 w-full">
 
     <a href="https://wa.me/243846354303"
-       class="block bg-green-700 text-white text-center py-2 rounded">
+       class="block bg-green-700 text-white text-center py-2 rounded hover:bg-green-600 transition">
        Envoyer sur WhatsApp
     </a>
   </section>
 
   <!-- FOOTER -->
-  <footer class="text-center text-xs p-4 text-gray-500">
+  <footer class="text-center text-xs p-4 text-gray-500 mt-6">
     © 2026 Carlacess e-Moto
   </footer>
 
