@@ -12,20 +12,22 @@
 <!-- NAVBAR -->
 <nav class="bg-green-700 text-white">
   <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-    <!-- Tu peux remplacer ce texte par un logo plus tard -->
-    <div class="text-xl font-bold">RiderAccess</div>
+    
+    <!-- LOGO (tu peux remplacer plus tard par une image si tu veux) -->
+    <div class="text-xl font-bold">
+      RiderAccess
+    </div>
 
     <div class="hidden md:flex gap-6 font-medium">
       <a href="#" class="underline">Accueil</a>
       <a href="#boutique">Boutique</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+      <a href="#">À propos</a>
+      <a href="#">Contact</a>
     </div>
 
-    <a href="https://wa.me/243846354303"
-       class="bg-white text-green-700 px-4 py-2 rounded font-semibold">
-      Commander
-    </a>
+    <button class="bg-white text-green-700 px-4 py-2 rounded font-semibold">
+      Mon Panier
+    </button>
   </div>
 </nav>
 
@@ -33,23 +35,30 @@
 <section class="bg-gradient-to-r from-gray-100 to-gray-200 py-16">
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
 
+    <!-- TEXTE -->
     <div>
       <h1 class="text-4xl font-extrabold mb-4">
         ACCESSOIRES & <span class="text-green-700">PIÈCES MOTO</span>
       </h1>
-      <p class="mb-6 text-gray-600">
-        Roulez l’esprit tranquille avec des accessoires pensés pour votre sécurité, votre confort et votre liberté.
+
+      <p class="mb-6 text-gray-600 text-lg">
+        Roulez l’esprit tranquille avec des accessoires pensés pour votre sécurité,
+        votre confort et votre liberté.
       </p>
+
       <a href="#boutique"
-         class="inline-block bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-600">
+         class="inline-block bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-600 transition">
         Voir les accessoires
       </a>
     </div>
 
+    <!-- IMAGE -->
     <div>
-      <img src="https://github.com/Hellomisterben/carlacess-emoto/blob/main/hero-moto.jpg.png"
-           alt="Accessoires moto"
-           class="rounded-xl shadow-lg">
+      <img 
+        src="https://raw.githubusercontent.com/Hellomisterben/carlacess-emoto/main/hero-moto.jpg.png"
+        alt="Accessoires moto sécurité confort liberté"
+        class="rounded-xl shadow-lg w-full aspect-video object-cover"
+      >
     </div>
 
   </div>
@@ -59,136 +68,4 @@
 <section class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6">
 
   <div class="bg-white rounded shadow p-6">
-    <h3 class="text-green-700 font-bold text-lg mb-2">
-      Casques & Protections
-    </h3>
-    <p class="text-sm mb-4">
-      Intégral • Modulable • Cross
-    </p>
-    <a href="#boutique"
-       class="bg-green-700 text-white px-4 py-2 rounded inline-block">
-      Voir
-    </a>
-  </div>
-
-  <div class="bg-white rounded shadow p-6">
-    <h3 class="text-green-700 font-bold text-lg mb-2">
-      Pièces mécaniques
-    </h3>
-    <p class="text-sm mb-4">
-      Freins • Chaînes • Filtres
-    </p>
-    <a href="#boutique"
-       class="bg-green-700 text-white px-4 py-2 rounded inline-block">
-      Découvrir
-    </a>
-  </div>
-
-  <div class="bg-white rounded shadow p-6">
-    <h3 class="text-green-700 font-bold text-lg mb-2">
-      Accessoires & Style
-    </h3>
-    <p class="text-sm mb-4">
-      Rétroviseurs • Leviers • LEDs
-    </p>
-    <a href="#boutique"
-       class="bg-green-700 text-white px-4 py-2 rounded inline-block">
-      Explorer
-    </a>
-  </div>
-
-</section>
-
-<!-- PRODUITS -->
-<section id="boutique" class="max-w-7xl mx-auto px-6 py-12">
-  <h2 class="text-2xl font-bold mb-6">
-    Produits populaires
-  </h2>
-
-  <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-
-    <div class="bg-white rounded shadow p-4 text-center">
-      <img src="https://images.unsplash.com/photo-1589187155478-7d6c0f62d6d8"
-           class="mb-3 rounded">
-      <h3 class="font-semibold">Casque intégral</h3>
-      <p class="text-sm mb-3">120 €</p>
-      <a href="https://wa.me/243846354303?text=Bonjour%20je%20veux%20le%20casque%20intégral"
-         class="bg-green-700 text-white px-4 py-2 rounded inline-block">
-        Commander
-      </a>
-    </div>
-
-    <div class="bg-white rounded shadow p-4 text-center">
-      <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738"
-           class="mb-3 rounded">
-      <h3 class="font-semibold">Pot d’échappement</h3>
-      <p class="text-sm mb-3">89 €</p>
-      <a href="https://wa.me/243846354303?text=Bonjour%20je%20veux%20un%20pot%20d’échappement"
-         class="bg-green-700 text-white px-4 py-2 rounded inline-block">
-        Commander
-      </a>
-    </div>
-
-    <div class="bg-white rounded shadow p-4 text-center">
-      <img src="https://images.unsplash.com/photo-1625231334168-35067f8853ed"
-           class="mb-3 rounded">
-      <h3 class="font-semibold">Gants moto</h3>
-      <p class="text-sm mb-3">45 €</p>
-      <a href="https://wa.me/243846354303?text=Bonjour%20je%20veux%20des%20gants%20moto"
-         class="bg-green-700 text-white px-4 py-2 rounded inline-block">
-        Commander
-      </a>
-    </div>
-
-    <div class="bg-white rounded shadow p-4 text-center">
-      <img src="https://images.unsplash.com/photo-1592840062661-6d37e46a9f08"
-           class="mb-3 rounded">
-      <h3 class="font-semibold">Rétroviseurs sport</h3>
-      <p class="text-sm mb-3">30 €</p>
-      <a href="https://wa.me/243846354303?text=Bonjour%20je%20veux%20des%20rétroviseurs%20sport"
-         class="bg-green-700 text-white px-4 py-2 rounded inline-block">
-        Commander
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- CTA -->
-<section id="contact" class="bg-green-700 text-white py-12 text-center">
-  <h2 class="text-3xl font-bold mb-2">
-    Vous cherchez une pièce précise ?
-  </h2>
-  <p class="mb-6">
-    Envoyez-nous une photo sur WhatsApp, réponse rapide.
-  </p>
-  <a href="https://wa.me/243846354303"
-     class="bg-white text-green-700 px-6 py-3 rounded font-semibold">
-    Contacter sur WhatsApp
-  </a>
-</section>
-
-<!-- SERVICES -->
-<section id="services"
-         class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6 text-center">
-  <div>
-    🔒
-    <p class="font-semibold">Paiement sécurisé</p>
-  </div>
-  <div>
-    🚚
-    <p class="font-semibold">Livraison rapide</p>
-  </div>
-  <div>
-    📞
-    <p class="font-semibold">Support client</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-white text-center text-sm text-gray-500 py-6">
-  © 2026 RiderAccess — Accessoires & Pièces Moto
-</footer>
-
-</body>
-</html>
+    <h3 class="text-green-700 font-bold text-lg mb-2">Casques & Protections</h3>
